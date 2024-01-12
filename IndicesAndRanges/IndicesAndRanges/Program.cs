@@ -20,7 +20,7 @@ Console.WriteLine(firstElement); // "first"
 
 string[] twoElements = collection[1..3]; // contains: "second", "third"
 string[] allElements = collection[..]; // contains: "first", "second", "third", "fourth", "fifth", "last"
-string[] firstThreeElements = collection[..-3]; // contains: "first", "second", "third"
+string[] firstThreeElements = collection[..3]; // contains: "first", "second", "third"
 string[] lastThreeElements = collection[3..]; // contains: "fourth", "fifth", "last"
 string[] lastTwoElements = collection[^2..]; // contains: "fifth", "last"
 
