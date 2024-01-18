@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Deconstructors
 {
     internal class Customer
@@ -30,20 +25,20 @@ namespace Deconstructors
             PhoneNumber = phoneNumber;
         }
 
-        public void Deconstructor(out string firstName, out string lastName)
+        internal void Deconstruct(out string firstName, out string lastName)
         {
             firstName = FirstName;
             lastName = LastName;
         }
 
-        public void Deconstructor(out string firstName, out string lastName, out string email)
+        public void Deconstruct(out string firstName, out string lastName, out string email)
         {
             firstName = FirstName;
             lastName = LastName;
             email = Email;
         }
 
-        public void Deconstructor(out string firstName, out string lastName, out string email,
+        public void Deconstruct(out string firstName, out string lastName, out string email,
             out string address, out string city, out string postalCode, out string country)
         {
             firstName = FirstName;
@@ -55,7 +50,7 @@ namespace Deconstructors
             country = Country;
         }
 
-        public void Deconstructor(out string firstName, out string lastName, out string email,
+        public void Deconstruct(out string firstName, out string lastName, out string email,
             out string address, out string city, out string postalCode, out string country, out string phoneNumber)
         {
             firstName = FirstName;
@@ -67,6 +62,5 @@ namespace Deconstructors
             country = Country;
             phoneNumber = PhoneNumber;
         }
-
     }
 }
